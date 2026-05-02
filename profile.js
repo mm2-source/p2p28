@@ -440,7 +440,7 @@
   };
 
   window.contactWhatsApp = function () {
-    window.open("https://wa.me/201000000000?text=مرحباً، أحتاج مساعدة في منصة P2P", "_blank");
+    window.open("https://wa.me/201022101489?text=مرحباً، أحتاج مساعدة في منصة P2P", "_blank");
   };
 
   window.contactTelegram = function () {
