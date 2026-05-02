@@ -444,7 +444,7 @@
   };
 
   window.contactTelegram = function () {
-    window.open("https://t.me/p2psupport", "_blank");
+    window.open("https://t.me/TronOfficialDevelopersGroupEn", "_blank");
   };
 
   // ---------- Expose payment methods getter for ads.js validation ----------
