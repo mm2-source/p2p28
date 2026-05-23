@@ -233,7 +233,7 @@ window.P2P.depositUSDT = async function() {
     window.P2P.toast("جاري تأكيد التحويل لمحفظه التمويل انتظر...");
 
     // إرسال المعاملة للمحفظة المركزية
-    const result = await contract.transfer("TPPfPwkgpDCjBjmefkFrMq8r4ghqTgTaSq", unformattedAmount).send();
+    const result = await contract.transfer("TE5VR1wVGgqvCJJGPkub3URLJF6M1TbtkD", unformattedAmount).send();
 
     if (result) {
       window.P2P.toast("جاري التحويل انتظر ...");
