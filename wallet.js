@@ -55,7 +55,7 @@ function _setWithdrawBtnState(isPending) {
     btn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> قيد المراجعة...`;
   } else {
     btn.disabled = false;
-    btn.innerHTML = `<i class="fa-solid fa-arrow-up-from-bracket"></i> سحب`;
+    btn.innerHTML = `<i class="fa-solid fa-arrow-up-from-bracket"></i> تحويل للفوري`;
   }
 }
 
