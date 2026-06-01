@@ -584,7 +584,7 @@ input[type="number"]::-webkit-inner-spin-button{ -webkit-appearance:none; margin
 }
 .input:focus-within,
 .orderInput:focus-within {
-  border-color: #9ca3af;
+  border-color: #86efac;
   outline: none;
 }
 .input--muted{ background: color-mix(in oklab, var(--chip) 90%, var(--input) 10%); }
