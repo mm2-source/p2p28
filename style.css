@@ -272,8 +272,8 @@ input[type="number"]::-webkit-inner-spin-button{ -webkit-appearance:none; margin
   border: none;
   overflow: hidden;
   margin: 0;
-  width: 150px;
-  height: 36px;
+  width: 170px;
+  height: 28px;
   flex: 0 0 auto;
 }
 .marketToggle__thumb{
