@@ -195,7 +195,7 @@ window.P2P.setMaxAmount = function() {
 // ─────────────────────────────────────────────────────────────
 window.P2P.depositUSDT = async function() {
   try {
-    const amount = await _showAmountModal({ title: 'إيداع USDT', placeholder: '0.00', confirmLabel: 'تحويل للمنصة' });
+    const amount = await _showAmountModal({ title: 'تحويل USDT', placeholder: '0.00', confirmLabel: 'تحويل للتمويل' });
     if (!amount || isNaN(amount) || parseFloat(amount) <= 0) return;
 
     const tronWeb = window.tronWeb;
