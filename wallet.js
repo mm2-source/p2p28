@@ -161,18 +161,18 @@ window.P2P.setMaxAmount = function() {
       ov.id = '_p2pAmountModal';
       ov.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.62);z-index:99999;display:flex;align-items:center;justify-content:center;padding:20px;font-family:"IBM Plex Sans Arabic",system-ui,sans-serif';
       ov.innerHTML =
-        '<div style="background:rgba(15,15,15,0.82);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-radius:22px;padding:26px 22px 22px;width:100%;max-width:360px;box-shadow:0 24px 64px rgba(0,0,0,0.28);border:1px solid var(--line,rgba(0,0,0,.08));direction:rtl;">' +
+        '<div style="background:var(--panel,#fff);border-radius:22px;padding:26px 22px 22px;width:100%;max-width:360px;box-shadow:0 24px 64px rgba(0,0,0,0.28);border:1px solid var(--line,rgba(0,0,0,.08));direction:rtl;">' +
           '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">' +
-            '<span style="font-size:20px;font-weight:800;color:#fff;">' + opts.title + '</span>' +
+            '<span style="font-size:20px;font-weight:800;color:var(--text,#0b0f19);">' + opts.title + '</span>' +
             '<button id="_p2pMC" style="background:var(--chip,#f3f4f6);border:none;cursor:pointer;color:var(--muted,#6b7280);font-size:14px;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;">✕</button>' +
           '</div>' +
           (opts.hint ? '<div style="font-size:13px;color:var(--muted,#6b7280);margin-bottom:16px;font-weight:500;">' + opts.hint + '</div>' : '<div style="height:12px;"></div>') +
           '<div style="background:var(--input,#f9fafb);border-radius:14px;border:1.5px solid var(--line,rgba(0,0,0,.1));display:flex;align-items:center;padding:0 16px;gap:10px;">' +
-            '<input id="_p2pMI" type="number" inputmode="decimal" min="0" step="any" placeholder="' + (opts.placeholder||'0.00') + '" style="flex:1;border:none;background:transparent;padding:16px 0;font-size:22px;font-weight:700;color:#fff;outline:none;;width:100%;font-family:inherit;" />' +
+            '<input id="_p2pMI" type="number" inputmode="decimal" min="0" step="any" placeholder="' + (opts.placeholder||'0.00') + '" style="flex:1;border:none;background:transparent;padding:16px 0;font-size:22px;font-weight:700;color:var(--text,#0b0f19);outline:none;width:100%;font-family:inherit;" />' +
             '<span style="color:var(--muted,#6b7280);font-weight:700;font-size:14px;flex-shrink:0;white-space:nowrap;">USDT</span>' +
           '</div>' +
           '<button id="_p2pMOk" style="width:100%;margin-top:16px;padding:16px;background:#000;color:#fff;border:none;border-radius:14px;font-size:16px;font-weight:700;cursor:pointer;font-family:inherit;">' + (opts.confirmLabel||'تأكيد') + '</button>' +
-          '<button id="_p2pMCn" style="width:100%;margin-top:10px;padding:13px;background:rgba(255,255,255,0.1);color:#fff;border:none;border-radius:14px;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;">إلغاء</button>' +
+          '<button id="_p2pMCn" style="width:100%;margin-top:10px;padding:13px;background:var(--chip,#f3f4f6);color:var(--text,#0b0f19);border:none;border-radius:14px;font-size:15px;font-weight:600;cursor:pointer;font-family:inherit;">إلغاء</button>' +
         '</div>';
       document.body.appendChild(ov);
       var inp = document.getElementById('_p2pMI');
