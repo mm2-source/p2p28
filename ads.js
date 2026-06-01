@@ -377,7 +377,7 @@
                       </div>
 
                       <div class="binAd__stats">
-                        <span class="binAd__statsRate" data-merchant-pct="${safeAddrAttr}">…%</span>
+                        <span class="binAd__statsRate">${d.completionRate ?? "…"}%</span>
                         <span class="binAd__statsSep">|</span>
                         <span class="binAd__statsOrders">
                           تداول من الطلبات:
