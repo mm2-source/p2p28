@@ -269,7 +269,7 @@ window.P2P.withdrawUSDT = async function() {
   const bal = window.P2P.state.availableBalance || 0;
 
   // 1. طلب المبلغ
-  const amount = await _showAmountModal({ title: 'سحب USDT', hint: `المتاح: ${window.P2P.utils.format2(bal)} USDT`, placeholder: '0.00', confirmLabel: 'طلب سحب' });
+  const amount = await _showAmountModal({ title: 'تحويل USDT', hint: `المتاح: ${window.P2P.utils.format2(bal)} USDT`, placeholder: '0.00', confirmLabel: 'تحويل للفوري' });
   if (!amount || isNaN(amount) || parseFloat(amount) <= 0) return;
   if (parseFloat(amount) > bal) {
     window.P2P.toast("الكمية المطلوبة أكبر من رصيدك المتاح");
