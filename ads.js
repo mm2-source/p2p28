@@ -381,7 +381,7 @@
                         <span class="binAd__statsSep">|</span>
                         <span class="binAd__statsOrders">
                           تداول من الطلبات:
-                          <b data-merchant-orders="${safeAddrAttr}">…</b>
+                          <b>${d.tradeCount ?? "…"}</b>
                         </span>
                       </div>
 
