@@ -218,7 +218,7 @@
     const btn = document.getElementById("orderActionBtn");
     if (title) title.textContent = action === "sell" ? "Sell USDT" : "Buy USDT";
     if (btn) {
-      btn.textContent = action === "sell" ? "Sell USDT with 0 Fees" : "Buy USDT with 0 Fees";
+      btn.textContent = action === "sell" ? "بيع USDT بدون رسوم" : "شراء USDT بدون رسوم ";
       btn.classList.toggle("primaryBtn--red", action === "sell");
     }
   }
