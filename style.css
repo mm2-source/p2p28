@@ -272,7 +272,7 @@ input[type="number"]::-webkit-inner-spin-button{ -webkit-appearance:none; margin
   border: none;
   overflow: hidden;
   margin: 0;
-  width: 178px;
+  width: 150px;
   height: 36px;
   flex: 0 0 auto;
 }
